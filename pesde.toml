@@ -1,0 +1,26 @@
+name = "idkaboutbytes/observable"
+version = "1.0.0"
+description = "Observable package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/observable"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[dependencies]
+DuckTypeUtils = { repo = "idkaboutbytes/ducktypeutils", rev = "v1.0.0" }
+MaidTaskUtils = { repo = "idkaboutbytes/maidtaskutils", rev = "v1.0.0" }
+Subscription = { repo = "idkaboutbytes/subscription", rev = "v1.0.0" }
